@@ -1,0 +1,75 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% HST Cycle 34 Phase I Proposal --- ABSTRACT
+%
+% Title: Catching IGM Dust in the Act:
+%        A Per-Sightline UV Spectroscopic Test with HST/COS and LSST SNe Ia
+%
+% This file contains the APT-submitted abstract (plain-text friendly).
+% It is written as a standalone compilable LaTeX snippet so the PI can
+% (a) build it on its own to preview, and (b) paste the rendered text
+% directly into the APT abstract field.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{amsmath}
+\emergencystretch=1em
+
+% Light-weight macros so the file compiles standalone without the
+% HST style file (which defines \ion elsewhere). Convert the numeric
+% second argument to an uppercase Roman numeral so "\ion{Mg}{2}"
+% renders and extracts as "Mg II".
+\makeatletter
+\newcommand{\@ROMANNUM}[1]{%
+  \ifcase#1\or I\or II\or III\or IV\or V\or VI\or VII\or VIII\or IX\or X\fi}
+\providecommand{\ion}[2]{#1\,\@ROMANNUM{#2}}
+\makeatother
+
+\begin{document}
+
+\begin{center}
+{\large\bfseries Catching IGM Dust in the Act:\\
+A Per-Sightline UV Spectroscopic Test with HST/COS and LSST SNe~Ia}
+\end{center}
+
+\noindent
+Type~Ia supernovae (SNe~Ia) are the cornerstone of modern cosmology, and
+in the Stage~IV era systematic uncertainties now dominate their distance
+budget. The Union3 analysis identifies intergalactic dust extinction as
+the second-largest systematic in SNe~Ia cosmology --- yet the existence
+of this dust has only ever been inferred \emph{statistically}, through
+the cross-correlation of quasar colors with foreground galaxies
+(M\'enard et~al.\ 2010). In the sixteen years since, no study has
+obtained direct spectroscopic evidence that reddening along any
+individual SNe~Ia sightline is caused by intervening \ion{Mg}{2}
+absorption.
+
+\begin{sloppypar}
+We propose a 34-orbit non-disruptive Target of Opportunity program to
+obtain HST/COS~G185M UV spectroscopy of 5--7 anomalously reddened
+SNe~Ia in the COSMOS Deep Drilling Field, triggered within three weeks
+of LSST/Rubin discovery. A five-stage pipeline --- LSST alert; COSMOS2020
+photo-$z=0.30$--0.45; dDLR$>3$ (HST-ACS morphology) for host-dust
+rejection; foreground-galaxy impact parameter $\rho<200$~kpc; and LSST
+SALT3 color excess $\Delta E(B{-}V)\geq0.03$~mag --- yields 6--10
+COS-ready targets per year. At the redshifts of the pre-identified
+foreground galaxies we search for
+\ion{Mg}{2}~$\lambda\lambda$2796,~2803 absorption; for sightlines
+placing Ly$\alpha$ in COS~G130M, we conduct a bonus DLA search.
+\end{sloppypar}
+
+A single detection correlated with the photometric reddening would
+constitute the \emph{first direct, per-sightline spectroscopic evidence
+in history} that IGM dust biases the SNe~Ia Hubble diagram ---
+converting a 16-year-old statistical inference into a confirmed
+cosmological systematic. A null result over six sightlines instead
+places a $2\sigma$ constraint on the M\'enard prediction, an equally
+informative outcome for Stage~IV cosmology. HST/COS is uniquely
+required: no other facility delivers the NUV wavelength coverage,
+spectral resolution ($R\sim16{,}000$--20{,}000), and UV sensitivity
+needed to detect $W_0(2796)\geq 0.3$~\AA\ at
+$m_{\rm UV}\sim20.5$--21.5~AB.
+
+\end{document}
