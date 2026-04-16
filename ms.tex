@@ -38,127 +38,86 @@
 
 \subsection*{Background and Motivation}
 
-Type~Ia supernovae (SNe~Ia) serve as the cornerstone of modern cosmology,
-providing the first direct evidence for the accelerated expansion of the
-Universe \citep{Riess1998, Perlmutter1999}. As precision cosmology enters
-the era of Stage~IV surveys, systematic uncertainties in SNe~Ia distance
-measurements are becoming the dominant limitation. One subtle but
-potentially significant systematic is dust extinction by intergalactic
-medium (IGM) dust along the sightline to each supernova.
+Type~Ia supernovae (SNe~Ia) are the cornerstone of modern cosmology
+\citep{Riess1998, Perlmutter1999}, and in the Stage~IV era systematic
+uncertainties now dominate their distance budget. The Union3 analysis
+\citep{Rubin2023} identifies intergalactic dust extinction as the
+second-largest systematic in SNe~Ia cosmology.
 
-\citet{Menard2010} demonstrated statistically that intergalactic dust
-introduces a redshift-dependent dimming and reddening of background
-sources, with a mean rest-frame $B$-band opacity of $A_B \gtrsim 0.03$
-magnitudes at $z = 0.5$. This signal was detected via cross-correlation of
-quasar colors with foreground galaxy positions over scales from 20~kpc to
-several Mpc, and it implies that IGM dust introduces a systematic bias in
-the SNe~Ia Hubble diagram that grows with redshift. The associated dust
-resides primarily in \ion{Mg}{2} absorbing clouds around galaxies:
-\citet{MenardFukugita2012} measured the cosmic dust density in \ion{Mg}{2}
-absorbers to be $\Omega_{\rm dust} \sim 2 \times 10^{-6}$, comparable to
-the amount of dust in galactic disks, and with a dust-to-gas ratio
-consistent with an outflow origin. Most recently, \citet{Menard2026}
-have provided updated theoretical predictions for the IGM dust signal
-expected in individual SNe~Ia sightlines, motivating the direct
-spectroscopic test we propose here.
+\citet{Menard2010} showed that IGM dust imprints a redshift-dependent
+dimming and reddening of background sources, with a mean rest-frame
+$B$-band opacity $A_B \gtrsim 0.03$~mag at $z = 0.5$, detected via
+cross-correlation of quasar colors with foreground galaxies on
+20~kpc--Mpc scales. The associated dust lives in \ion{Mg}{2} absorbing
+clouds around galaxies, with cosmic density
+$\Omega_{\rm dust} \sim 2 \times 10^{-6}$ and a dust-to-gas ratio
+consistent with outflow origin \citep{MenardFukugita2012}. Updated
+per-sightline predictions for SNe~Ia are given by \citet{Menard2026}.
 
-Despite these compelling statistical detections, no study has yet obtained
-\emph{direct spectroscopic proof} that IGM dust along individual SNe~Ia
-sightlines is associated with intervening \ion{Mg}{2} absorption. The
-connection between photometric reddening of SNe~Ia and the predicted
-spectroscopic signature has never been tested on a per-object basis. We
-propose to close this gap with a proof-of-concept non-disruptive Target of
-Opportunity (ToO) program using the Cosmic Origins Spectrograph (COS) on
-HST.
+Despite these statistical detections, no study has yet obtained
+\emph{direct spectroscopic proof} that reddening along an individual
+SNe~Ia sightline is due to intervening \ion{Mg}{2} absorption. We close
+this gap with a non-disruptive Target of Opportunity (ToO) program using
+the Cosmic Origins Spectrograph (COS).
 
 \subsection*{Scientific Goals}
 
-This program has two primary science goals:
-
 \begin{enumerate}
+\itemsep 0pt
 \item \textbf{Direct detection of IGM \ion{Mg}{2} absorption in SNe~Ia
-  spectra.} By obtaining UV spectroscopy of anomalously reddened SNe~Ia in
-  the COSMOS Deep Drilling Field (DDF), we will search for \ion{Mg}{2}
-  $\lambda\lambda$2796, 2803 absorption at the redshifts of foreground
-  galaxies identified along each sightline. A detection of \ion{Mg}{2}
-  absorption correlated with the photometric color excess $\Delta E(B-V)$
-  would constitute the first per-object spectroscopic confirmation of the
-  IGM dust hypothesis of \citet{Menard2010, Menard2026}.
-
-\item \textbf{Search for Damped Lyman-$\alpha$ (DLA) systems.} For
-  sightlines where a foreground galaxy places the Lyman-$\alpha$ line
-  within the COS G130M bandpass, we will search for the characteristic
-  damping wings of DLA systems ($N_{\rm HI} \geq 2 \times 10^{20}$
-  cm$^{-2}$). A DLA detection along a reddened SNe~Ia sightline would
-  provide a direct measure of the neutral hydrogen column associated with
-  IGM dust, enabling a constraint on the dust-to-gas ratio of the
-  absorbing medium.
+  spectra.} UV spectroscopy of anomalously reddened SNe~Ia in the COSMOS
+  Deep Drilling Field (DDF) to search for \ion{Mg}{2}
+  $\lambda\lambda$2796, 2803 at the redshifts of foreground galaxies on
+  each sightline. Detection correlated with the photometric color excess
+  $\Delta E(B-V)$ would constitute the first per-object confirmation of
+  the IGM dust hypothesis \citep{Menard2010, Menard2026}.
+\item \textbf{Search for Damped Ly$\alpha$ (DLA) systems.} For sightlines
+  placing Ly$\alpha$ in the COS G130M band, we will search for DLA damping
+  wings ($N_{\rm HI} \geq 2\times10^{20}$~cm$^{-2}$) to directly measure
+  the neutral hydrogen column of the absorbing IGM dust and constrain
+  its dust-to-gas ratio.
 \end{enumerate}
 
-\begin{figure}[h]
+\begin{figure}[!ht]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/fig1_science_case.pdf}
-\caption{
-  \textbf{Left:} The predicted IGM opacity as a function of redshift
-  from \citet{Menard2010}, showing the rest-frame $B$-band extinction
-  $A_B$ growing to $\sim$0.03--0.05 mag by $z \sim 0.5$. This
-  redshift-dependent effect biases SNe~Ia cosmological parameter
-  estimates if uncorrected.
-  \textbf{Right:} Schematic of the observation concept. A LSST-discovered
-  SNe~Ia at $z_{\rm SN} = 0.3$--0.45 (background source) is observed with
-  COS G185M. \ion{Mg}{2} absorption from a foreground galaxy at
-  $z_{\rm fg} < z_{\rm SN}$ within impact parameter $\rho < 200$~kpc
-  imprints a characteristic doublet on the UV spectrum, directly tracing
-  the dust responsible for the photometric reddening detected by LSST.
+\includegraphics[width=0.62\textwidth]{figures/fig1_science_case.pdf}
+\caption{\small
+  \textbf{Left:} Predicted IGM opacity vs.\ redshift
+  \citep{Menard2010}: rest-frame $B$-band extinction $A_B \sim
+  0.03$--0.05 mag by $z\sim0.5$, a bias to SNe~Ia cosmology if
+  uncorrected.
+  \textbf{Right:} Observation concept. An LSST SNe~Ia at $z_{\rm SN}=0.3$--0.45
+  is observed with COS~G185M; \ion{Mg}{2} from a foreground galaxy at
+  $z_{\rm fg}<z_{\rm SN}$ within $\rho<200$~kpc imprints a doublet on
+  the UV spectrum, directly tracing the dust that reddens the SNe~Ia.
 }
 \label{fig:science}
 \end{figure}
 
 \subsection*{Why HST/COS is Uniquely Required}
 
-The \ion{Mg}{2} $\lambda\lambda$2796, 2803 doublet at $z_{\rm fg} =
-0.1$--0.5 falls at observed wavelengths of 3080--4200~\AA\ --- deep in the
-near-UV, inaccessible to ground-based telescopes. COS G185M is the only
-instrument in existence capable of detecting these absorption lines at the
-required spectral resolution ($R \sim 16{,}000$--20{,}000) with sufficient
-UV sensitivity to observe SNe~Ia at $z \sim 0.3$--0.45 (peak UV magnitude
-$m_{\rm UV} \sim 20.5$--21.5 AB). No ground-based facility can access
-wavelengths below $\sim$3200~\AA\ at the required sensitivity. This program
-is therefore uniquely enabled by HST.
+The \ion{Mg}{2} $\lambda\lambda$2796, 2803 doublet at $z_{\rm fg}=0.1$--0.5
+falls at 3080--4200~\AA, inaccessible from the ground below
+$\sim$3200~\AA\ at the required sensitivity. COS~G185M is the only
+facility delivering $R\sim16{,}000$--20{,}000 with the UV throughput to
+reach SNe~Ia at $z\sim0.3$--0.45 ($m_{\rm UV}\sim20.5$--21.5~AB).
 
 \subsection*{Target Field: COSMOS Deep Drilling Field}
 
-We focus exclusively on the COSMOS Deep Drilling Field
-($10^{\rm h}00^{\rm m}$, $+02^\circ12'$). The COSMOS field offers
-unparalleled advantages for this program:
+We target the COSMOS DDF ($10^{\rm h}00^{\rm m}$, $+02^\circ12'$), which
+uniquely combines: (i) \textbf{LSST priority} --- double visits of other
+DDFs ($\sim$40{,}000 over 10~yr), reaching 10-yr depth in the first 3~yr
+\citep{GrisDDF2024}; (ii) \textbf{Ancillary data} --- COSMOS2020
+photo-$z$ to $\sigma_z/(1+z)\sim0.01$ for $\sim$$10^6$ galaxies to
+$i\sim25$~AB \citep{Weaver2022}, zCOSMOS/C3R2 spectroscopy at $z<1$, and
+HST-ACS morphology for precise dDLR; (iii) \textbf{Contemporaneous
+spectroscopy} --- PFS/Subaru will obtain $\sim$20{,}000 host redshifts
+during LSST, removing the need for pre-trigger observations.
 
-\begin{itemize}
-\item \textbf{LSST/Rubin DDF priority:} COSMOS receives double the visit
-  allocation of other DDFs ($\sim$40{,}000 visits over 10 years) and
-  reaches 10-year survey depth within the first 3 years of operations
-  \citep{GrisDDF2024}. This maximizes the early SNe~Ia discovery rate
-  during the first HST Cycle.
-
-\item \textbf{Extraordinary ancillary data:} The COSMOS2020 photometric
-  redshift catalog provides photo-$z$ measurements with $\sigma_z/(1+z)
-  \sim 0.01$ for $\sim$10$^6$ galaxies to $i \sim 25$~AB
-  \citep{Weaver2022}. The zCOSMOS and C3R2 spectroscopic surveys provide
-  secure spectroscopic redshifts for foreground galaxies at $z < 1$.
-  HST-ACS morphology measurements enable precise dDLR calculations for all
-  host galaxies.
-
-\item \textbf{Contemporaneous spectroscopic support:} The PFS/Subaru
-  survey will obtain $\sim$20{,}000 host galaxy spectroscopic redshifts in
-  the COSMOS field contemporaneously with LSST operations, eliminating the
-  need for pre-trigger spectroscopy.
-\end{itemize}
-
-Based on the LSST Science Book estimate of $\sim$2{,}500 SNe~Ia per DDF
-per year and the COSMOS double-visit allocation, we conservatively expect
-150--250 SNe~Ia per year at $z = 0.3$--0.45 in the COSMOS field, of which
-6--10 will satisfy all selection criteria (see Section~2) per year ---
-providing a robust target pool for 5--7 non-disruptive ToO triggers per
-HST Cycle.
+From the LSST Science Book rate ($\sim$2{,}500 SNe~Ia DDF$^{-1}$~yr$^{-1}$)
+and the COSMOS double allocation, we expect 150--250 SNe~Ia~yr$^{-1}$ at
+$z=0.3$--0.45, of which 6--10 will satisfy our selection criteria ---
+sufficient for 5--7 ToO triggers per Cycle.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -167,144 +126,78 @@ HST Cycle.
 
 \subsection*{Overview}
 
-We request 34 HST orbits for a non-disruptive Target of Opportunity
-program to obtain COS/NUV G185M UV spectroscopy of 5--7 SNe~Ia in the
-COSMOS Deep Drilling Field, triggered within 3 weeks of discovery by the
-LSST/Rubin Observatory. Each target requires 4--5 HST orbits, fitting
-comfortably within the 34-orbit small-program limit.
+We request 34 HST orbits for a non-disruptive ToO program to obtain
+COS/NUV G185M spectroscopy of 5--7 SNe~Ia in the COSMOS DDF, triggered
+within 3~weeks of LSST/Rubin discovery. Each target needs 3--6 orbits,
+within the 34-orbit small-program limit.
 
 \subsection*{Target Selection Cascade}
 
-The richness of the COSMOS field allows us to be highly selective,
-pre-qualifying targets through a five-stage filter cascade before any HST
-time is committed (Figure~\ref{fig:selection}).
+A five-stage pipeline pre-qualifies candidates before any HST time is
+committed (Figure~\ref{fig:selection}). \textbf{(1)~LSST alert:}
+Rubin-classified SNe~Ia from the 60-s alert stream with normal
+light-curve parameters. \textbf{(2)~Photo-$z$ filter:} COSMOS2020
+host-$z$ in 0.30--0.45 to $\sigma_z/(1+z)<0.02$; this window places any
+foreground \ion{Mg}{2}~$\lambda$2796 within the G185M peak-sensitivity
+band (1700--2100~\AA, CENWAVE~1900) and keeps $m_{\rm UV}\lesssim21.5$.
+\textbf{(3)~Large dDLR (host-dust rejection):} we require dDLR~$>3$
+\citep{Sullivan2006}, rejecting SNe~Ia in dusty disks so any color
+excess is plausibly of IGM origin; the HST-ACS COSMOS catalog supplies
+morphology to $i\sim26$ ($\sim$60\% of the pool cut here).
+\textbf{(4)~Foreground-galaxy sightline search:} COSMOS2020/zCOSMOS
+galaxies at $z_{\rm fg}<z_{\rm SN}$ with $\rho\leq200$~kpc, tiered as
+high ($\rho<50$) / medium (50--150~kpc); MAGIICAT shows 8$\sigma$
+anti-correlation of $W_0(2796)$ with $\rho$ and $\sim$70\% covering for
+$W_0>0.3$~\AA\ at $\rho<50$~kpc \citep{Nielsen2013, Dutta2020}. Sightlines
+placing Ly$\alpha$ in G130M are flagged as DLA candidates.
+\textbf{(5)~Anomalous reddening:} LSST SALT3 residual
+$\Delta E(B-V)\geq0.03$~mag --- with host dust already removed at
+Stage~3, this biases to IGM-origin sightlines \citep{Menard2010,
+Menard2026}.
 
-\textbf{Stage 1 --- LSST discovery and alert.}
-We monitor the LSST COSMOS DDF alert stream in real time. Rubin issues
-photometric alerts within 60~s of each detection. We consider all
-transients classified as SNe~Ia by LSST photometric classifiers with
-light-curve parameters consistent with a normal thermonuclear event.
+The full cascade yields 6--10 COS-ready targets per year; we trigger
+the best 5--7 per Cycle, ranked by $\rho$ and then $\Delta E(B-V)$.
 
-\textbf{Stage 2 --- Photometric redshift filter ($z = 0.30$--$0.45$).}
-We require the SNe~Ia host galaxy to have a COSMOS2020 photo-$z$ in the
-range $z = 0.30$--0.45, confirmed to $\sigma_z/(1+z) < 0.02$. This window
-ensures that \ion{Mg}{2} $\lambda$2796 from a foreground absorber at any
-$z_{\rm fg} < z_{\rm SN}$ falls within the COS G185M peak sensitivity
-region (observed 1700--2100~\AA\ with CENWAVE 1900), and that the SNe~Ia
-UV continuum at rest $\sim$2700~\AA\ reaches $m_{\rm UV} \lesssim 21.5$~AB
---- bright enough for S/N~$= 10$ per resolution element in 4--5 HST
-orbits.
-
-\textbf{Stage 3 --- Large dDLR cut (host dust rejection).}
-The Directional Light Radius \citep[dDLR;][]{Sullivan2006} measures the
-angular separation between a SNe~Ia and its host galaxy normalized by the
-ellipsoidal half-light radius of the host in the direction of the SN.
-We require $\rm dDLR > 3$, meaning the SNe~Ia lies more than 3 host
-half-light radii from the nucleus in its direction. This efficiently
-rejects SNe~Ia embedded in dusty spiral disks, ensuring that any observed
-color excess is more plausibly of IGM rather than host-ISM origin. The
-required morphological parameters (semimajor axis, position angle,
-Petrosian radius) are available from the HST-ACS COSMOS morphology catalog
-for all galaxies to $i \sim 26$~AB. This cut reduces the candidate pool by
-$\sim$60\% while retaining those events best suited to our science goal.
-
-\textbf{Stage 4 --- Foreground galaxy sightline search.}
-For each remaining candidate, we search the COSMOS2020 and zCOSMOS
-catalogs for a galaxy at $z_{\rm fg} < z_{\rm SN}$ within a projected
-impact parameter $\rho \leq 200$~kpc of the SNe~Ia sightline. The
-\ion{Mg}{2} absorber-galaxy catalog MAGIICAT \citep{Nielsen2013}
-demonstrates a well-established 8$\sigma$ anti-correlation between
-\ion{Mg}{2} equivalent width and impact parameter, with a covering
-fraction of $\sim$70\% for $W_0(2796) > 0.3$~\AA\ at $\rho < 50$~kpc
-\citep{Dutta2020}. We tier targets by impact parameter (highest priority:
-$\rho < 50$~kpc; medium priority: $\rho = 50$--150~kpc) and require
-$z_{\rm fg}$ to place \ion{Mg}{2} $\lambda$2796 within the G185M
-bandpass. Sightlines where the foreground galaxy also places Ly$\alpha$
-within the COS G130M range are flagged as DLA candidates.
-
-\textbf{Stage 5 --- Anomalous photometric reddening.}
-We require the LSST SALT3 light-curve fit to show a residual color excess
-$\Delta E(B-V) \geq 0.03$~mag relative to the standard SNe~Ia template
-color. Because Stage~3 already eliminates host-dust events, a residual
-excess at this stage is statistically more likely to be of IGM origin ---
-precisely the signal predicted by \citet{Menard2010, Menard2026}. This
-filter biases the sample toward sightlines where the \ion{Mg}{2} signal is
-most likely to be detectable, maximizing scientific return.
-
-After applying all five stages, we expect 6--10 COS-ready targets per
-year in the COSMOS field. We trigger on the best 5--7 per Cycle, ranked
-by (1) foreground galaxy impact parameter and (2) $\Delta E(B-V)$ excess.
-
-\begin{figure}[h]
+\begin{figure}[!ht]
 \centering
-\includegraphics[width=0.88\textwidth]{figures/fig2_target_selection.pdf}
-\caption{
-  Target selection cascade. Starting from $\sim$200 SNe~Ia per year at
-  $z = 0.3$--0.45 in the COSMOS DDF, five successive filters reduce the
-  pool to 6--10 COS-ready targets per year. We trigger on the top 5--7
-  per HST Cycle as non-disruptive ToO observations. The yield at each
-  stage is shown, along with the COSMOS data asset used. The dDLR $> 3$
-  cut (Stage~3) is the key discriminator that isolates IGM reddening
-  from host-galaxy dust contamination.
+\includegraphics[width=0.56\textwidth]{figures/fig2_target_selection.pdf}
+\caption{\small
+  Target selection cascade. Starting from $\sim$200 COSMOS DDF SNe~Ia
+  per year at $z=0.3$--0.45, five filters reduce the pool to 6--10
+  COS-ready targets per year; we trigger the best 5--7 per Cycle. The
+  dDLR$>3$ cut is the key discriminator isolating IGM from host-galaxy
+  dust.
 }
 \label{fig:selection}
 \end{figure}
 
 \subsection*{Instrument Configuration}
 
-All observations use COS in spectroscopic mode with the Primary Science
-Aperture (PSA):
-
-\begin{itemize}
-  \item \textbf{Grating:} G185M, CENWAVE 1900~\AA.\ This setting provides
-    continuous wavelength coverage from $\sim$1700--2100~\AA\ across
-    NUV stripes A, B, C, covering \ion{Mg}{2} $\lambda\lambda$2796, 2803
-    at $z_{\rm fg} = 0.10$--0.52 and the COS G185M peak effective area
-    region.
-
-  \item \textbf{Spectral resolution:} $R \sim 16{,}000$--20{,}000
-    ($\Delta v \sim 15$--20 km~s$^{-1}$ per resolution element),
-    sufficient to resolve the \ion{Mg}{2} doublet and measure rest
-    equivalent widths $W_0(2796) \geq 0.3$~\AA\ at the required
-    significance.
-
-  \item \textbf{FP-POS:} All 4 positions will be used to mitigate fixed
-    pattern noise and detector artifacts, following standard COS
-    observing practice.
-
-  \item \textbf{Target acquisition:} ACQ/IMAGE with MIRRORA followed by
-    spectroscopic observation. Total acquisition overhead: $\sim$6~min
-    per visit.
-
-  \item \textbf{Bright object protection:} All targets will be screened
-    against COS bright-object limits using the STScI ETC prior to
-    triggering. SNe~Ia at $z = 0.3$--0.45 at peak ($m_{\rm UV} \sim
-    20.5$--21.5~AB) are well below NUV bright-object limits.
-\end{itemize}
+All observations use COS/PSA with grating G185M, CENWAVE~1900~\AA,
+yielding continuous 1700--2100~\AA\ coverage across NUV stripes A/B/C
+and reaching $R\sim16{,}000$--20{,}000 ($\Delta v\sim15$--20~km~s$^{-1}$
+per resel) --- sufficient to resolve the \ion{Mg}{2} doublet and measure
+$W_0(2796)\geq0.3$~\AA. All four FP-POS positions are used to mitigate
+fixed-pattern noise. Target acquisition is ACQ/IMAGE with MIRRORA
+($\sim$6~min per visit). Targets at $m_{\rm UV}\sim20.5$--21.5~AB are
+far below the COS NUV bright-object limits and will be screened via the
+STScI ETC before each trigger.
 
 \subsection*{Exposure Time and Orbit Budget}
 
-We adopt a science goal of S/N~$\geq 10$ per COS resolution element at
-the wavelength of \ion{Mg}{2} $\lambda$2796 from the foreground absorber.
-This is sufficient to detect absorption with rest equivalent width
-$W_0(2796) \geq 0.3$~\AA\ at $>3\sigma$ significance, covering the full
-range of \ion{Mg}{2} absorbers associated with galaxy halos
-\citep{Nielsen2013}. The COS detector has no read noise (photon counter),
-so S/N scales cleanly as $\sqrt{t}$.
+We target S/N~$\geq10$ per resel at the \ion{Mg}{2}~$\lambda$2796
+wavelength of the foreground absorber --- sufficient to detect
+$W_0(2796)\geq0.3$~\AA\ at $>3\sigma$ and cover the full halo-absorber
+range \citep{Nielsen2013}. COS is a photon counter (no read noise), so
+S/N$\propto\sqrt{t}$. At our nominal $z_{\rm SN}=0.35$
+($m_{\rm UV}\approx21.0$~AB) the required on-source time is
+$\sim$10{,}500~s; with $\sim$44~min per orbit after guide-star (re)acq
+and overheads, each target needs 4 orbits.
 
-Table~\ref{tab:orbits} summarizes the orbit allocation per target as a
-function of redshift. At our optimal target redshift of $z_{\rm SN} =
-0.35$, the SNe~Ia UV continuum reaches $m_{\rm UV} \approx 21.0$~AB,
-requiring $\sim$10{,}500~s of on-source science time (S/N~$= 10$, G185M,
-continuum flux). With $\sim$44~min of on-source time per orbit after
-accounting for guide star acquisition (6.5~min), reacquisition (6.5~min
-per subsequent orbit), target acquisition (6~min), and instrument
-overheads (5~min first exposure + 2~min subsequent), each target requires
-4 orbits.
-
-\begin{table}[h]
+\begin{table}[!ht]
 \centering
-\caption{Orbit allocation per SNe~Ia target (S/N~$= 10$, COS G185M).}
+\small
+\caption{Orbit allocation per SNe~Ia target (S/N~$=10$, COS G185M).}
 \label{tab:orbits}
 \begin{tabular}{lcccc}
 \hline\hline
@@ -319,46 +212,32 @@ $z_{\rm SN}$ & $m_{\rm UV}$ (AB) & Science exp.\ (s) & Orbits/target & Targets i
 \end{table}
 
 \noindent
-Our baseline program observes \textbf{6 targets at $z_{\rm SN} =
-0.30$--0.40} (mixed, depending on trigger availability), using
-\textbf{$\sim$24--30 orbits}, with 4--10 orbits held as contingency for
-targets at slightly higher redshift or for repeat observations in the
-event of a scheduling conflict. The total request of \textbf{34 orbits}
-accommodates 5--7 targets across the redshift range with full scheduling
-flexibility.
+Our baseline observes 6 targets at $z_{\rm SN}=0.30$--0.40 in
+$\sim$24--30 orbits, with 4--10 orbits held in contingency for slightly
+higher-$z$ targets or scheduling reobservations. The \textbf{34-orbit}
+request accommodates 5--7 targets with full flexibility. Each visit is
+multi-orbit with FP-POS positions distributed across exposures.
 
-Each visit is structured as a multi-orbit visit to allow guide star
-reacquisition between orbits and maximize on-source efficiency. The four
-FP-POS positions are distributed across exposures within each visit.
+\subsection*{Non-Disruptive ToO Designation}
 
-\subsection*{Non-Disruptive Target of Opportunity Designation}
-
-This program is designated as a \textbf{non-disruptive Target of
-Opportunity}. Triggers will be submitted only when a qualifying LSST SNe~Ia
-is identified through the automated five-stage selection pipeline. We
-anticipate 5--7 triggers per Cycle, each submitted within 3 weeks of
-SNe~Ia discovery while the UV flux remains near peak brightness ($\pm$2
-weeks from $B$-band maximum). The non-disruptive designation means that
-HST observations will be scheduled within the normal scheduling queue
-without interrupting ongoing observations, consistent with the estimated
-trigger frequency of fewer than one per month. No prior approval is
-required for individual triggers beyond the initial TAC approval of this
-program.
+Triggers are submitted only when a candidate passes the automated
+five-stage pipeline, within 3 weeks of discovery and within $\pm$2 weeks
+of $B$-band maximum. At $<$1 trigger per month on average, HST
+scheduling is not disrupted; no per-trigger approval is required beyond
+TAC approval of this program.
 
 \subsection*{Expected Outcomes}
 
-With 6 sightlines observed, we expect $\sim$0.4--0.6 strong \ion{Mg}{2}
-detections ($W_0 > 0.3$~\AA) based on the absorber incidence rate $dN/dz
-\sim 0.25$ for strong systems at $z \sim 0.3$--0.5
-\citep{MenardFukugita2012}. By selecting sightlines with known foreground
-galaxies at $\rho < 200$~kpc, we boost the expected detection rate to
-$\sim$1--2 absorbers per 6 targets \citep{Nielsen2013}. Even a single
-detection with a correlated photometric $\Delta E(B-V)$ excess would
-constitute the first direct spectroscopic proof of the IGM dust hypothesis
-for individual SNe~Ia. A non-detection over 6 sightlines would itself
-provide a 2$\sigma$ constraint on the Ménard dust prediction --- a
-scientifically valuable result. DLA detection would be a significant bonus,
-directly measuring the neutral hydrogen column of the absorbing system.
+The strong-absorber incidence rate $dN/dz\sim0.25$ at $z\sim0.3$--0.5
+\citep{MenardFukugita2012} implies $\sim$0.4--0.6 blind detections in 6
+sightlines. Pre-selecting on foreground galaxies at $\rho<200$~kpc
+raises this to $\sim$1--2 per 6 targets \citep{Nielsen2013}. A single
+detection correlated with the photometric $\Delta E(B-V)$ excess would
+constitute the first direct spectroscopic proof of the IGM dust
+hypothesis on a per-SNe~Ia basis; a null result over 6 sightlines
+yields a 2$\sigma$ constraint on the M\'enard prediction. DLA detection
+is a bonus, directly measuring the neutral-hydrogen column of the
+absorber.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -370,56 +249,30 @@ directly measuring the neutral hydrogen column of the absorbing system.
 % 4. SPECIAL REQUIREMENTS
 \specialreq % Do not delete this command.
 
-This program requests \textbf{non-disruptive Target of Opportunity}
-status. The following special requirements apply:
-
-\begin{itemize}
-  \item \textbf{ToO trigger window:} Each trigger must be executed within
-    3 weeks of SNe~Ia discovery by LSST. The SNe~Ia UV flux is brightest
-    within $\pm$2 weeks of $B$-band maximum; observations outside this
-    window will result in insufficient S/N.
-
-  \item \textbf{Multi-orbit visits:} Each target requires a multi-orbit
-    visit of 3--6 consecutive or near-consecutive orbits, as detailed in
-    Table~\ref{tab:orbits}. Standard guide star reacquisition between
-    orbits applies.
-
-  \item \textbf{FP-POS 1--4:} All four focal-plane offset positions must
-    be used to eliminate fixed pattern noise on the COS NUV MAMA detector,
-    as required for faint-source continuum spectroscopy.
-
-  \item \textbf{Bright object screening:} Each ToO target must be
-    screened against COS NUV bright-object limits using the STScI ETC
-    prior to trigger submission. Only targets satisfying all COS safety
-    limits will be triggered.
-
-  \item \textbf{No scheduling windows:} As a non-disruptive ToO, no
-    specific scheduling windows are required. Triggers will be placed in
-    the scheduling queue and executed at the next available opportunity
-    within the 3-week constraint.
-\end{itemize}
+This program requests \textbf{non-disruptive ToO} status with the
+following requirements: (i) \textbf{Trigger window:} each execution
+within 3 weeks of LSST discovery, corresponding to $\pm$2 weeks from
+$B$-band maximum (required for adequate UV S/N); (ii)
+\textbf{Multi-orbit visits:} 3--6 consecutive or near-consecutive
+orbits per target (Table~\ref{tab:orbits}), standard guide-star
+reacquisition; (iii) \textbf{FP-POS~1--4:} all four focal-plane offsets
+used to remove fixed-pattern noise on the COS~NUV~MAMA; (iv)
+\textbf{Bright-object screening:} pre-trigger ETC check against all
+COS NUV limits; (v) \textbf{No scheduling windows} required beyond the
+3-week post-discovery constraint.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % 5. COORDINATED OBSERVATIONS
 \coordinatedobs % Do not delete this command.
 
-This program is scientifically coordinated with the LSST/Rubin Observatory
-COSMOS Deep Drilling Field survey, which provides the SNe~Ia discovery
-alerts and multi-band photometric light curves used for target selection.
-No formal coordination agreement with Rubin is required, as LSST alert
-data will be publicly available within 60 seconds of each detection through
-the Rubin alert broker network.
-
-The PFS/Subaru spectroscopic survey of the COSMOS field is expected to
-provide host galaxy spectroscopic redshifts contemporaneously with LSST
-operations and will be used where available to confirm photo-$z$
-estimates. No formal ToO coordination with Subaru is required.
-
-No Director's Discretionary or pre-approved HST observations in the
-COSMOS field overlap with our science goals. The COS UV spectroscopy
-we propose has not been obtained for any LSST-discovered transient to
-date.
+This program is scientifically coordinated with the LSST/Rubin COSMOS
+DDF survey (SNe~Ia alerts and light curves for target selection) and
+with the PFS/Subaru COSMOS spectroscopic survey (host-galaxy redshifts).
+Both are public; no formal coordination agreement is required. No
+pre-approved DD or GO HST observations in COSMOS overlap our science
+goals, and the proposed COS UV spectroscopy has not been obtained for
+any LSST-discovered transient to date.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -428,10 +281,10 @@ date.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection*{References}
-
-\bibliographystyle{plain}
+{\small
+\bibliographystyle{plainnat}
 \bibliography{references}
+}
 
 \end{document} % End of proposal. Do not delete this line.
 % Everything after this command is ignored.
